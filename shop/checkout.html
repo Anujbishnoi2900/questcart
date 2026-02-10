@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Checkout</h1>
+        <a href="cart.html">⬅ Back to Cart</a>
+    </header>
+
+    <div class="checkout-container">
+        <form id="checkoutForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="text" id="city" placeholder="City" required>
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p id="summaryTotal">Total: ₹0</p>
+        </div>
+    </div>
+
+    <script src="../js/shop.js"></script>
+</body>
+</html>
